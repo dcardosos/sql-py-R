@@ -1,0 +1,7 @@
+SELECT t1.species as species, count(*) as qtd_of_penguins, avg(t1.body_mass_g) as mean_body_mass_g, t1.species = 'Adelie' as is_adelie  
+FROM penguins t1 
+GROUP BY t1.species
+-----------------------------------
+SELECT t1.island as island, count(*) as qtd_of_penguins
+FROM penguins t1 
+GROUP BY t1.island
